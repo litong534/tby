@@ -128,7 +128,7 @@ export default {
       addDoc({
         sex: parseInt(this.getDoc.sex[0]),
         emotion: parseInt(this.getDoc.emotion[0]),
-        name: this.getDoc.name,
+        name: this.getDoc.name === '' ? '佚名' : this.getDoc.name,
         job: this.getDoc.job,
         school: this.getDoc.school,
         company: this.getDoc.company,
