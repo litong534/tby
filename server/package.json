@@ -1,0 +1,27 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "forever start app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "babel-polyfill": "^6.26.0",
+    "bson-objectid": "^1.2.1",
+    "express": "^4.16.2",
+    "formidable": "^1.1.1",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.19.1",
+    "moment-timezone": "^0.5.13",
+    "nodemailer": "^4.2.0",
+    "promise": "^8.0.1",
+    "utility": "^1.13.1"
+  },
+  "devDependencies": {
+    "mongoose": "^4.12.1"
+  }
+}
