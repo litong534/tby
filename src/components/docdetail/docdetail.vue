@@ -2,7 +2,9 @@
   <div class="scroll_container">
     <cube-scroll>
       <div class="detail" v-if="getDetail">
-        <div class="header">{{getDetail.name}} 的档案
+        <div class="header">
+          <i @click="goBack" class="fa fa-arrow-left goback"></i>
+          {{getDetail.name}} 的档案
           <i @click="toggleStars" class="star fa" :class="getDetail.collect ? 'fa-star':'fa-star-o'"></i>
         </div>
         <div class="container">
@@ -81,10 +83,13 @@ export default {
         }
       });
     },
+    goBack() {
+      this.$router.go(-1);
+    },
     modify() {
       this.setModify(this.getDetail);
       this.modifyStatus(true);
-      this.$router.push('/add');
+      this.$router.push("/add");
     },
     ...mapMutations({
       toggleCollect: "TOGGLE_COLLECT",
@@ -139,6 +144,11 @@ export default {
       text-align: center;
       color: #fff;
       box-sizing: border-box;
+      .goback
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 25px;
       .star
         color: $star_color;
         font-size: 30px;

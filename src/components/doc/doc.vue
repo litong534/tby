@@ -65,7 +65,7 @@ export default {
       this._id ? add._id = this._id : '';
 
       this.setDoc(add);
-      this.$router.go(-1);
+      this.goBack();
     },
     goBack() {
       this.$router.go(-1);
