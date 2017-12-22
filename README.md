@@ -1,6 +1,7 @@
 # tby
 
-> A Vue.js project
+一个使用cube-ui构建的项目---小型通讯录
+
 
 ## Build Setup
 
