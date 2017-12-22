@@ -2,6 +2,10 @@
 
 一个使用cube-ui构建的项目---小型通讯录
 
+预览地址: http://rozwel.club/tby
+
+也欢迎大家光临我的博客地址: http://rozwel.club
+
 
 ## Build Setup
 
